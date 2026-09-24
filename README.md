@@ -81,7 +81,7 @@
 > 推荐操作系统：**Ubuntu 22.04+ / Debian 11+**，已将域名 DNS 解析到本机 IP。
 
 ```bash
-curl -fsSL https://github.com/2290145679/ProxyProbe-Release/releases/latest/download/deploy-hub.sh | bash
+curl -fsSL https://raw.githubusercontent.com/2290145679/ProxyProbe-Release/main/deploy-hub.sh | bash
 ```
 
 脚本会交互式询问：
@@ -109,7 +109,7 @@ curl -fsSL https://github.com/2290145679/ProxyProbe-Release/releases/latest/down
 
 ```bash
 export DOMAIN=your-domain.com ADMIN_PASS=yourpassword
-curl -fsSL https://github.com/2290145679/ProxyProbe-Release/releases/latest/download/deploy-hub.sh | bash
+curl -fsSL https://raw.githubusercontent.com/2290145679/ProxyProbe-Release/main/deploy-hub.sh | bash
 ```
 
 ---
