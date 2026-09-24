@@ -1,7 +1,7 @@
 # 🚀 ProxyProbe - 分布式服务器监控与 Xray / Sing-box 双核心代理管理系统
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Release-v2.0.0-blue.svg" alt="Release">
+  <img src="https://img.shields.io/badge/Release-v2.0.1-blue.svg" alt="Release">
   <img src="https://img.shields.io/badge/Dual_Core-Xray_Core_%2B_Sing--box-success.svg" alt="Dual Core">
   <img src="https://img.shields.io/badge/Protocols-15_Types_Supported-purple.svg" alt="Protocols">
   <img src="https://img.shields.io/badge/Frontend-Vite_%2B_React_%2B_Tailwind-cyan.svg" alt="Frontend">
@@ -81,7 +81,7 @@
 > 推荐操作系统：**Ubuntu 22.04+ / Debian 11+**，已将域名 DNS 解析到本机 IP。
 
 ```bash
-curl -fsSL https://github.com/2290145679/ProxyProbe/releases/latest/download/deploy-hub.sh | bash
+curl -fsSL https://github.com/2290145679/ProxyProbe-Release/releases/latest/download/deploy-hub.sh | bash
 ```
 
 脚本会交互式询问：
@@ -109,7 +109,7 @@ curl -fsSL https://github.com/2290145679/ProxyProbe/releases/latest/download/dep
 
 ```bash
 export DOMAIN=your-domain.com ADMIN_PASS=yourpassword
-curl -fsSL https://github.com/2290145679/ProxyProbe/releases/latest/download/deploy-hub.sh | bash
+curl -fsSL https://github.com/2290145679/ProxyProbe-Release/releases/latest/download/deploy-hub.sh | bash
 ```
 
 ---
@@ -187,7 +187,7 @@ hhub
 
 ### Q4: 部署时提示下载 proxy-manager 失败？
 - 请确认 Release 中存在对应架构的 `proxy-manager-linux-amd64`（或 `arm64`）文件。
-- 访问 Release 页面检查：`https://github.com/2290145679/ProxyProbe/releases`
+- 访问 Release 页面检查：`https://github.com/2290145679/ProxyProbe-Release/releases`
 
 ---
 
