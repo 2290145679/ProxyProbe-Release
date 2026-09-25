@@ -1,13 +1,13 @@
 {
-  "version": "v2.5.9",
-  "title": "ProxyProbe v2.5.9 远程探针核心状态感知、脚本转义自愈与节点创建容灾",
+  "version": "v2.5.10",
+  "title": "ProxyProbe v2.5.10 探针核心下载器指令修复、默认节点协议名一致化与服务器级联清理",
   "release_date": "2026-09-26",
   "changelog": [
-    "【探针脚本自愈】修复被控端 proxy_agent.py 环境变量剥离时的引号转义错误，彻底消除 SyntaxError",
-    "【跨平台兼容】修复被控端一键脚本中 OpenSSL EC 密钥生成的 Bash 进程代换语法，全面兼容 Debian/Ubuntu Dash Shell",
-    "【核心感知容灾】优化主控端核心状态识别逻辑，引入版本号兜底推导机制，彻底解决历史残留数据导致的 Sing-box 卡红问题",
-    "【创建节点门禁】优化新建节点核心校验门禁为双轨校验，杜绝远程探针已安装核心却被误拦截的异常",
-    "【稳定性增强】提升被控端心跳同步韧性与异常恢复能力"
+    "【核心下载器修复】彻底修复 proxy-agent.sh 中 CURL_OPTS 缺失 curl 命令前缀导致所有核心静默跳过下载的重大缺陷",
+    "【被控依赖自愈】增强被控端系统环境检测，自动确保 python3, curl, unzip, tar 等解压工具全部就绪",
+    "【默认节点命名】新建节点时默认名称自动与所选协议类型保持高度一致（如 VLESS Reality, Hysteria 2 等）",
+    "【服务器级联清理】在面板删除服务器时，自动级联清除关联的所有代理节点与旧探针状态，重加服务器零数据冲突",
+    "【闭源打包与加固】全面打包包含 license_guard 与 cryptography 的 64 位 ELF 机器码二进制"
   ],
   "release_url": "https://github.com/2290145679/ProxyProbe-Release"
 }
