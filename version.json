@@ -1,13 +1,13 @@
 {
-  "version": "v2.5.7",
-  "title": "ProxyProbe v2.5.7 协议兼容性修复与真实连通性握手测试引擎",
+  "version": "v2.5.8",
+  "title": "ProxyProbe v2.5.8 监控大盘、24小时时序流量走势与Telegram交互式运维",
   "release_date": "2026-09-25",
   "changelog": [
-    "【连通性测试重构】重构节点测试引擎，彻底替换纯 TCP 端口假阳性探测为真实端到端协议握手与流量检验",
-    "【Shadowsocks 修复】修复 Shadowsocks 2022 在客户端订阅生成中误替用户密码导致的密钥长度非法问题",
-    "【Trojan TLS 修复】为 Trojan 入站挂载 TLS 证书并适配主流客户端强制 TLS 规范与证书校验",
-    "【SOCKS5 修复】修复 SOCKS5 服务端入站账号同步缺失问题，活跃订阅用户可正常鉴权连接",
-    "【Sing-box 导出补充】Sing-box 客户端配置导出补充 SOCKS5 出站与 Trojan TLS 安全参数"
+    "【监控大盘】新增首屏监控大盘，包含节点全网健康率、吞吐总量、活跃用户与平均延迟四大核心KPI",
+    "【时序流量走势】新增24小时全网吞吐走势图（原生自适应SVG矢量面积折线图），支持小时级聚合与动态自适应",
+    "【节点流量排行】新增各代理节点流量消耗占比TOP排行榜与全协议分布矩阵",
+    "【全景感知矩阵】新增节点实时健康状态大盘，支持一键并发全网协议真实握手复测与后台10分钟自动巡检",
+    "【Telegram交互运维】新增Telegram双向交互指令引擎，支持手机端发送 /status, /test, /backup, /nodes 远程运维"
   ],
   "release_url": "https://github.com/2290145679/ProxyProbe-Release"
 }
